@@ -1,11 +1,12 @@
-public class Transport {
+public abstract class Transport {
     private String modelName;
     private int wheelsCount;
 
-    public Transport(String modelName, int wheelsCount){
+    public Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
+
     public String getModelName() {
         return modelName;
     }
@@ -14,7 +15,9 @@ public class Transport {
         return wheelsCount;
     }
 
-    public void updateTyre(){
+    public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
+
+    public abstract void check(); // Абстрактный метод для проверки транспорта
 }
