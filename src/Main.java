@@ -11,7 +11,6 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycleFirst", 2);
         Bicycle bicycle2 = new Bicycle("bicycleSecond", 2);
 
-        // Проверка всех транспортных средств
         station.check(truck);
         station.check(truck2);
         station.check(bicycle);

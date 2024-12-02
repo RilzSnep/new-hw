@@ -19,5 +19,12 @@ public abstract class Transport {
         System.out.println("Меняем покрышку");
     }
 
+    // Общий метод для обслуживания шин
+    public void serviceTyres() {
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+    }
+
     public abstract void check(); // Абстрактный метод для проверки транспорта
 }
